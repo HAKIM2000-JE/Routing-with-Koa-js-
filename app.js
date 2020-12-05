@@ -45,7 +45,7 @@ app.use(bodyParser())
 
 // router.get('/',async ctx=>{
 //     await ctx.render('index',{
-//         title: 'hakim',
+//         title: 'thing',
 //         numbers: numbers
 //     });
 // })
