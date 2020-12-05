@@ -24,7 +24,7 @@ render(app, {
 
 router.get('/', index);
 router.get('/add', showAdd);
-router.post('/add',add)
+router.post('/add',add);
 
 async  function index(ctx){
     await ctx.render('index', {
