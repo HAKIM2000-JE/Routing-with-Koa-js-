@@ -28,7 +28,7 @@ router.post('/add',add)
 
 async  function index(ctx){
     await ctx.render('index', {
-        title: 'hakim',
+        title: 'things',
         numbers: numbers
     });
 }
@@ -61,8 +61,8 @@ async function add(ctx) {
 }
 
 //Router Middleware
-router.get('/test', ctx => (ctx.body = 'hakim is working'))
-router.get('/',ctx=>(ctx.body='hakim '))
+router.get('/test', ctx => (ctx.body = 'Root page'))
+router.get('/',ctx=>(ctx.body='test route '))
 app.use(router.routes()).use(router.allowedMethods())
 
 app.listen(3000)
